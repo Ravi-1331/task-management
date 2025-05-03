@@ -13,7 +13,7 @@ const app = express()
 
 const frontend_Url = process.env.frontend_Url;
 
-app.use(cors(frontend_Url))
+app.use(cors('*'))
 app.use(express.json())
 app.use('/',AppRoutes)
 
