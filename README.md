@@ -70,3 +70,19 @@ This Task Management System is a web application developed using React.js for th
 * __client :__ React.js frontend code.
 * __server :__ Node.js backend code.
 
+##  Image of My project
+    
+## Login Form screensort (for employee, customer, login)
+ ![Dashboard Preview](./assets/1.png)
+ ![Dashboard Preview](./assets/2.png)
+ ![Dashboard Preview](./assets/3.png)
+
+ ## Dashboard for customer (he will create task for employee)
+   ![Dashboard Preview](./assets/4.png)
+   ![Dashboard Preview](./assets/5.png)
+   ![Dashboard Preview](./assets/6.png)
+
+## Dashboard for employee (he will do the task that is created by customer)
+   ![Dashboard Preview](./assets/7.png)
+   ![Dashboard Preview](./assets/8.png)
+   ![Dashboard Preview](./assets/9.png)
