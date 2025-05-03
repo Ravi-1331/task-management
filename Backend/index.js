@@ -7,15 +7,16 @@ import AppRoutes from './src/routes/index.js'
 dotenv.config()
 
 const PORT = process.env.PORT
-
+const frontend_Url = process.env.frontend_Url
 
 const app = express()
 
-const frontend_Url = process.env.frontend_Url;
+app.use(cors({
+  origin: frontend_Url,
+  credentials: true
+}))
 
-app.use(cors('*'))
 app.use(express.json())
-app.use('/',AppRoutes)
+app.use('/', AppRoutes)
 
-
-app.listen(PORT,()=> console.log(`App is listening ${PORT}`))
+app.listen(PORT, () => console.log(`App is listening ${PORT}`))
