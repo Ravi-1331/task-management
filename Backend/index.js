@@ -7,25 +7,11 @@ import AppRoutes from './src/routes/index.js'
 dotenv.config()
 
 const PORT = process.env.PORT || 5000
-const FRONTEND_URL = process.env.FRONTEND_URL
 
 const app = express()
 
 // CORS Middleware
-app.use(cors({
-  origin: FRONTEND_URL,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}))
-
-// Handle preflight requests manually (for OPTIONS)
-app.options('*', cors({
-  origin: FRONTEND_URL,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}))
+app.use(cors("*"))
 
 app.use(express.json())
 
