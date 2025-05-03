@@ -11,19 +11,19 @@ const FRONTEND_URL = process.env.FRONTEND_URL
 
 const app = express()
 
-// app.use(cors("*"))
+app.use(cors("*"))
 
-// Middleware
-app.use(cors({
-  origin: FRONTEND_URL,
-  credentials: true
-}))
+// // Middleware
+// app.use(cors({
+//   origin: FRONTEND_URL,
+//   credentials: true
+// }))
 
-// Handle pre-flight requests
-app.options('*', cors({
-  origin: FRONTEND_URL,
-  credentials: true
-}))
+// // Handle pre-flight requests
+// app.options('*', cors({
+//   origin: FRONTEND_URL,
+//   credentials: true
+// }))
 
 app.use(express.json())
 
