@@ -56,7 +56,7 @@ This Task Management System is a web application developed using React.js for th
            
                          npm run dev
 
-    __Run the Application(frontend):__
+    __Run the Application(backend):__
            
                          node index.js
 
